@@ -77,4 +77,7 @@ It took me a good chunk of the semester to select this project. I originally had
 * Always think about the design and aesthetics of your work. An ugly map, even if it shows groudbreaking work, won't get you as far as something beautiful. If you submit something for class that you didn't have enough time to work on the design, thats okay, but come back to it later and improve it. 
 * Think about your audience - if they are non-technical, think creatively about ways that you can discuss the work you do and skills you have without using jargon. One suggestions - swap out "geospatial data" for "location data", people tend to know what that is but get scared away by the word geospatial. 
 * Network!
+  * Attend Code for Philly Hackathons
+  * Attend GeoPhilly & Maptime
+  * Reach out to local or non-local people who do interesting work - people are usually receptive and flattered if you do it just to learn about them and what they do. Try to do this as soon as possible, not when you're actually actively looking for a job - its better to form the relationships ahead of time so it doesn't seem like you're just asking for something. 
 
