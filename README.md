@@ -70,6 +70,7 @@ It took me a good chunk of the semester to select this project. I originally had
 * Machine learning / predictive analytics
 
 #### Other Stuff
+* Check out this blog post by Sarah Cordivano - [Tips for Preparing for a Spatial Career](https://www.azavea.com/blog/2015/08/03/preparing-for-a-spatial-career-tips-for-students/).
 * Make a website to display all of your projects, host it on Github
 * Clone other projects on Github and mess around with them, your account will show all of the repos you have and the commits you make - good advertisement for employers
 * When talking about your work you don't always have to make it clear it was course work unless someone asks
