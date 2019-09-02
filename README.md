@@ -50,7 +50,7 @@ It took me a good chunk of the semester to select this project. I originally had
 
 #### Project Selection Recommendations
 * Try to actually start working as early in the semester as possible
-* Talk to other people in your class, in your program, in life in general - the best ideas are usually things that are relevant to others. And projects that are relevant to others get the most hype and make the best impression to prospective employers (in my opinion).
+* Talk to other people in your class, in your program, in life in general - the best ideas are usually things that are relevant to others. And projects that are relevant to others are likely to get the most hype and make the best impression to prospective employers.
 * Choose something you are personally interested in and that you have the ability to wrap your head around. Choosing a project that requires an intense amount of subject-matter research before even beginning the project mgiht not be the best idea. 
 * Think about how you can use this project to promote yourself - will it display valuable skills and expertise, is it something that prospective employers will be interested in?
 
@@ -75,7 +75,7 @@ It took me a good chunk of the semester to select this project. I originally had
 * Clone other projects on Github and mess around with them, your account will show all of the repos you have and the commits you make - good advertisement for employers
 * When talking about your work you don't always have to make it clear it was course work unless someone asks
 * Keep a running list of all of the technical skills you have and the projects you've done, even if they are very small - you never know what might strike someones interest.
-* Always think about the design and aesthetics of your work. An ugly map, even if it shows groudbreaking work, won't get you as far as something beautiful. If you submit something for class that you didn't have enough time to work on the design, thats okay, but come back to it later and improve it. 
+* Always think about the design and aesthetics of your work. An ugly map, even if it shows groundbreaking work, won't get you as far as something beautiful. If you submit something for class that you didn't have enough time to work on the design, thats okay, but come back to it later and improve it. 
 * Think about your audience - if they are non-technical, think creatively about ways that you can discuss the work you do and skills you have without using jargon. One suggestions - swap out "geospatial data" for "location data", people tend to know what that is but get scared away by the word geospatial. 
 * Network!
   * Attend Code for Philly Hackathons
