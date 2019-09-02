@@ -5,27 +5,17 @@
   <meta charset="utf-8">
   <!-- CSS Imports -->
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+  <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
   <link rel="stylesheet" href="css/leaflet.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Top Bar -->
-  <!-- <div class="row2">
-    <div class="welcome">
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">>>></button>
-      <h2>Philadelphia Refugee Resettlement</h2>
-      </div>
-
-  </div> -->
-  <!-- <div class="row"> -->
     <div class="container-fluid">
       <!-- Sidebar -->
-      <div class="col-md-2">
+      <div class="col-md-4">
         <div class="sidebar">
           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Philadelphia Refugee <br> Resettlement</button>
-                <!-- <h2>Philadelphia Refugee Resettlement</h2> -->
           <!-- Modal -->
           <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -59,7 +49,6 @@
           <h4 class="parameters"><b>Neighborhood Selection</b></h4>
 
           <div class="dropdown">
-            <!-- <button type="button" class="btn btn-sm btn-danger">Refugee Ethnicity</button> -->
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Refugee Ethnicity &nbsp;&nbsp;&nbsp;<span class="caret"></span>
             </button>
@@ -113,10 +102,8 @@
           <div class="factors">
             <h4 class="factors-title"><b>Factors to Include:</b></h4>
             <div class="checkbox checkboxes">
-<!-- <p> -->
                 <input type="checkbox" class="checkbox" id="all" value="">
                 <label for="all">SELECT ALL</label>
-              <!-- </p> -->
               <br>
                 <input type="checkbox" class="checkbox" id="elem" value="">
                 <label for="elem">Elementary Schools</label>
@@ -159,7 +146,6 @@
           <br>
           <br>
           <br>
-          <!-- <h6 class="scroll"> Scroll or Click on a Feature to Zoom in </h6> -->
           <button type="button" class="btn btn-default btn-sm"  id="reset-zoom" aria-label="Left Align">
           Reset Zoom
           </button>
@@ -167,16 +153,17 @@
         </div>
       </div>
       <!-- Map -->
-      <div class="col-md-10">
+      <div class="col-md-8">
       <div id="map" class="map"></div>
 
       </div>
     </div>
-  <!-- </div> -->
+
   <!-- Javascript Imports -->
   <script src="js/jquery-2.2.0.js"></script>
   <script src="js/leaflet.js"></script>
-  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+  <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/setup.js"></script>
