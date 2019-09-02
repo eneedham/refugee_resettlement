@@ -6,6 +6,16 @@
 ### Purpose of the Work
 The intention for this project is to combine GIS analysis and web-mapping technologies to create an online tool that will help organizations determine neighborhoods which are best fits for resettling different categories of refugees within Philadelphia.
 
+### Application Images
+*Project Explanation Modal*
+<img src="images/project-explanation.png" height=400>
+<br>
+*Criteria Selection Sidebar*
+<img src="images/criteria-selection.png" height=400>
+<br>
+*Map View - Blocks scored based on selection criteria*
+<img src="images/map-view.png" height=400>
+
 ### Project Need
 Philadelphia accepted 230 refugees between October 2015 and January 2016. This is an 18.6% increase from the same time period of the previous year. If this trend continues, Philadelphia may see a new refugee population of 887 people between October 2015 and September 2016, an increase above 2014-2015’s 748 arriving refugees. There are several organizations within Philadelphia that work with this incoming population, a need which is clearly growing.
 
