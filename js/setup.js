@@ -33,24 +33,6 @@ $(".legend").hide();
 $("#redo").hide();
 $(".selectedfactors").hide();
 
-// Array.prototype.contains = function(v) {
-//     for(var i = 0; i < this.length; i++) {
-//         if(this[i] === v) return true;
-//     }
-//     return false;
-// };
-//
-// Array.prototype.unique = function() {
-//     var arr = [];
-//     for(var i = 0; i < this.length; i++) {
-//         if(!arr.contains(this[i])) {
-//             arr.push(this[i]);
-//         }
-//     }
-//     return arr;
-// };
-
-
 //Default Zoom
 var defaultViewFunc = function(){
     map.setView([40.000, -75.1090], 11);
@@ -61,25 +43,9 @@ $("#reset-zoom").click(function(){
   defaultViewFunc();
 });
 
-// var popupfunc = function(x){
-//   popUpcontent = x.properties.commercial;
-// };
-
 //Function to zoom in & add popUp
 var eachFeature = function(feature, layer) {
-  // layer.bindPopup();
-  // layer.on('click', function (e) {
-  //   var bounds = this.getBounds();
-  //   // map.fitBounds(bounds);
-  //   // layer.bindPopup(feature.properties.total);
-  //   $(".welcome").empty();
-  //
-  //   layer.openPopup();
-  // });
   layer.on('mouseover', function(){
-    // layer.bindPopup(feature.properties.commercial);
-      // popupfunc(feature);
-      // layer.openPopup(popUpcontent);
       $(".sel-ethnicity").append("Census Block Score:" + feature.properties.total);
 
       layer.setStyle({ fillOpacity: 1, weight: 5});
@@ -93,19 +59,14 @@ var eachFeature = function(feature, layer) {
 };
 // feature, layer, other
 function eachTract(feature, layer) {
-// popUpcontent = 'quartier ' + feature.properties.commercial;
-  // layer.bindPopup('quartier ' + feature.properties.commercial);
   layer.on({
     mouseover: function(e){
       layer.setStyle({ fillOpacity: 1, weight: 5});
-      // layer.openPopup();
 
         info.update(layer.feature.properties);
-        // info.update(layer.feature.properties);
     },
     mouseout: function(e) {
       layer.setStyle({fillOpacity: 0.5, weight: 1});
-      // layer.closePopup();
       info.update();
     },
     click: function (e){
@@ -140,7 +101,6 @@ $('.dropdown-menu').on('click', function(){
 var myStyle = function (feature){
   if(feature.properties.total <= myList[0]){
     return {fillColor: "#053061", fillOpacity: 0.5, color: "#434343", weight: 1};
-    // myBins.push(feature.properties.total);
   }
   if(feature.properties.total > myList[0] && feature.properties.total <= myList[1]){
     return {fillColor: "#2166ac", fillOpacity: 0.5, color: "#434343", weight: 1};
@@ -176,22 +136,6 @@ var myStyle = function (feature){
     return {fillColor: "#B3ADA4", fillOpacity: 0.5, color: "#434343", weight: 1};
   }
 };
-//
-// function getColor(d) {
-//     return d == "Lowest Score" ? '#053061' :
-//            d == "1 "             ? "#2166ac" :
-//            d == "Low "             ? "#4393c3":
-//            d == "3 "            ? "#92c5de":
-//            d == "4 "            ? "#d1e5f0":
-//            d == "Moderate "            ? "#f7f7f7":
-//            d == "6 "            ? "#fddbc7":
-//            d == "7 "            ? "#f4a582":
-//            d == "High "            ? "#d6604d":
-//            d == "9 "            ? "#b2182b":
-//            d == "Highest Score"            ? "#67001f":
-//                                  "#B3ADA4";
-//
-// }
 
 function getColor(d) {
     return d == "Lowest" ? '#053061' :
@@ -200,7 +144,7 @@ function getColor(d) {
            d == "Moderate "    ? "#f7f7f7":
            d == "Moderate-High"? "#f4a582":
            d == "High "        ? "#d6604d":
-           d == "Highest"? "#67001f":
+           d == "Highest"      ? "#67001f":
                                  "#B3ADA4";
 
 }
@@ -264,9 +208,6 @@ var factorsList = [];
     $('#submit').prop('disabled', true);
     $('#redo').prop('disabled', false);
     $('.checkbox').prop('disabled', true);
-    // x = $("input[type='checkbox']").val();
-    // console.log($("input[type='checkbox']").val());
-    // $('.sel-ethnicity').append($('.checkbox').val());
 
     if ($('#elem').is(":checked")) {
       sum = sum+"+elementary";
@@ -366,7 +307,6 @@ var factorsList = [];
   // method that we will use to update the control based on feature properties passed
   info.update = function (layer) {
 
-      // x = Math.round(layer.total);
       this._div.innerHTML = '<h4>Census Block Score</h4>' +  (layer ?
           '</b><br />' + 'Block ID' + ' ' +'<b>' + layer.geoid10 + '</b><br />' +
           'Total Score' + ' ' + '<b>' + Math.round(layer.total*100)/100 + '</b>'
